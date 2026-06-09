@@ -1,6 +1,5 @@
 <script module>
 import { defineMeta } from "@storybook/addon-svelte-csf";
-import { fn } from "storybook/test";
 
 import ButtonGroup from "./ButtonGroup.svelte";
 
@@ -17,7 +16,7 @@ const { Story } = defineMeta({
   args: {
     buttons: demoButtons,
     value: "graph",
-    onselect: fn(),
+    onselect: () => {},
   },
 });
 </script>
