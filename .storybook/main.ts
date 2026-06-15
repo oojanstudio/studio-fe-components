@@ -2,6 +2,10 @@ import type { StorybookConfig } from "@storybook/sveltekit";
 
 const config: StorybookConfig = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|ts|svelte)"],
+  staticDirs: ["../static"],
+  features: {
+    sidebarOnboardingChecklist: false,
+  },
   addons: [
     "@storybook/addon-docs",
     "@storybook/addon-a11y",
